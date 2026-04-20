@@ -228,11 +228,10 @@ figcaption {
     text-transform: uppercase;
 }
 
-
 footer {
     background: var(--verde-primario);
     color: var(--blanco);
-    padding: 8rem 2rem 3rem; /* Padding superior alto para compensar el clip-path */
+    padding: 8rem 2rem 3rem;
     margin-top: 8rem;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
     display: flex;
@@ -290,7 +289,6 @@ footer .footer-copyright {
     opacity: 0.7;
 }
 
-
 @media (max-width: 992px) {
     .historia-contenedor {
         grid-template-columns: 1fr;
@@ -320,4 +318,20 @@ footer .footer-copyright {
     }
     
     h2 { font-size: 2rem; }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--verde-primario);
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 50%;
+    box-shadow: var(--sombra);
+    transition: var(--interaccion);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: var(--dorado);
+    transform: scale(1.1);
 }
